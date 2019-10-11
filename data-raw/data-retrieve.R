@@ -21,8 +21,9 @@ genera %>%
   write_csv("data-raw/genus.csv")
 
 # Sample data
-get_random <- function(x) {
-  runif(nn, min(x, na.rm = TRUE), max(x, na.rm = TRUE))
+get_random <- function(x, digits = 2) {
+  runif(nn, min(x, na.rm = TRUE), max(x, na.rm = TRUE)) %>%
+    round(digits)
 }
 tibble(
   id = ids,
