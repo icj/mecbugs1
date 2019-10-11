@@ -11,3 +11,9 @@ This package provides the following data tables.
 * `taxonomy`: taxonomy names from the Silva database (version ###)
 * `genus`: genus count matrix
 * `sample_data`: sample metadata
+
+Install with:
+
+```
+remotes::install_github("icj/mecbugs1")
+```
